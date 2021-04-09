@@ -11,6 +11,7 @@ WriteMakefile(
 	'DISTNAME' => 'Crypt-DES',
 	'VERSION_FROM' => 'DES.pm',,
 	'OBJECT' => 'DES.o _des.o',
+	'CCFLAGS' => '-Wno-implicit-function-declaration',
 	'dist'   => {COMPRESS=>'gzip', SUFFIX=>'gz'}
 );
 
